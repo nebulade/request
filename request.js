@@ -27,21 +27,21 @@ Request.prototype.request = function (method, url) {
     this._request.url = url;
 
     return this;
-}
+};
 
 Request.prototype.get = function (url) {
     this._request.method = GET;
     this._request.url = url;
 
     return this;
-}
+};
 
 Request.prototype.post = function (url) {
     this._request.method = POST;
     this._request.url = url;
 
     return this;
-}
+};
 
 Request.prototype.query = function () {
     if (arguments.length === 2) {
@@ -53,7 +53,7 @@ Request.prototype.query = function () {
     }
 
     return this;
-}
+};
 
 Request.prototype.send = function (data) {
     if (typeof data === 'object') {
@@ -65,7 +65,7 @@ Request.prototype.send = function (data) {
     }
 
     return this;
-}
+};
 
 Request.prototype.end = function (callback) {
     var that = this;
@@ -91,12 +91,12 @@ Request.prototype.end = function (callback) {
 
             callback(null, that._response);
         }
-    }
+    };
 
     var url = that._request.url;
 
     if (Object.keys(this._request.query).length) {
-        url += '?'
+        url += '?';
 
         var queries = Object.keys(this._request.query).map(function (key) {
             return key + '=' + that._request.query[key];
@@ -108,4 +108,4 @@ Request.prototype.end = function (callback) {
     that.req.open(that._request.method, url);
     that.req.setRequestHeader('content-type', that._request.contentType);
     that.req.send(that._request.data);
-}
+};
