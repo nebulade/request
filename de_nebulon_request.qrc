@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/de/nebulon/request">
+        <file>qmldir</file>
+        <file>request.js</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

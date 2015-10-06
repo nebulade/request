@@ -1,0 +1,22 @@
+{
+  "name": "de.nebulon.request",
+  "description": "Simple XMLHttpRequest wrapper with a chainable API",
+  "author": {
+    "name": "Johannes Zellner",
+    "email": "johannes@nebulon.de"
+  },
+  "repository": {
+    "type": "GITHUB",
+    "url": "git@github.com:nebulade/request.git"
+  },
+  "version": {
+    "label": "0.0.1",
+    "revision": "",
+    "fingerprint": ""
+  },
+  "dependencies": [
+  ],
+  "license": "MIT",
+  "pri_filename": "de_nebulon_request.pri",
+  "webpage": ""
+}
